@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240D8A5D1808F56F00A16377 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A4A1808F56F00A16377 /* AFHTTPClient.m */; };
+		240D8A5E1808F56F00A16377 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A4C1808F56F00A16377 /* AFHTTPRequestOperation.m */; };
+		240D8A5F1808F56F00A16377 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A4E1808F56F00A16377 /* AFImageRequestOperation.m */; };
+		240D8A601808F56F00A16377 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A501808F56F00A16377 /* AFJSONRequestOperation.m */; };
+		240D8A611808F56F00A16377 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A521808F56F00A16377 /* AFNetworkActivityIndicatorManager.m */; };
+		240D8A621808F56F00A16377 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A551808F56F00A16377 /* AFPropertyListRequestOperation.m */; };
+		240D8A631808F56F00A16377 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A571808F56F00A16377 /* AFURLConnectionOperation.m */; };
+		240D8A641808F56F00A16377 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A591808F56F00A16377 /* AFXMLRequestOperation.m */; };
+		240D8A651808F56F00A16377 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 240D8A5A1808F56F00A16377 /* LICENSE */; };
+		240D8A661808F56F00A16377 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D8A5C1808F56F00A16377 /* UIImageView+AFNetworking.m */; };
+		240D8A6F1809C3F100A16377 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240D8A6E1809C3F100A16377 /* AssetsLibrary.framework */; };
+		240D8A711809C3FF00A16377 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240D8A701809C3FF00A16377 /* CoreLocation.framework */; };
+		240D8A731809C40600A16377 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240D8A721809C40600A16377 /* CoreMotion.framework */; };
+		240D8A751809C41000A16377 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240D8A741809C41000A16377 /* CoreText.framework */; };
+		240D8A771809C41900A16377 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240D8A761809C41900A16377 /* MediaPlayer.framework */; };
+		240D8A791809C41F00A16377 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240D8A781809C41F00A16377 /* Security.framework */; };
+		240D8A7B1809C42A00A16377 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240D8A7A1809C42A00A16377 /* SystemConfiguration.framework */; };
+		2434A9081858CCB400FCD684 /* SimulatedNSMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2434A8FE1858CCB400FCD684 /* SimulatedNSMutableURLRequest.m */; };
+		2434A9091858CCB400FCD684 /* SimulatedAFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2434A9001858CCB400FCD684 /* SimulatedAFHTTPRequestOperation.m */; };
+		2434A90A1858CCB400FCD684 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2434A9031858CCB400FCD684 /* InfoPlist.strings */; };
+		2434A90B1858CCB400FCD684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2434A9061858CCB400FCD684 /* Main.storyboard */; };
+		243DC1D8185B87E000AAE093 /* FakeGTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 243DC1D6185B87E000AAE093 /* FakeGTMOAuth2Authentication.m */; };
+		243FEAC618062130001C2661 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243FEAC518062130001C2661 /* Foundation.framework */; };
+		243FEAC818062130001C2661 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243FEAC718062130001C2661 /* CoreGraphics.framework */; };
+		243FEACA18062130001C2661 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243FEAC918062130001C2661 /* UIKit.framework */; };
+		243FEAD018062130001C2661 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 243FEACE18062130001C2661 /* InfoPlist.strings */; };
+		243FEAD218062130001C2661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 243FEAD118062130001C2661 /* main.m */; };
+		243FEAD618062130001C2661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 243FEAD518062130001C2661 /* AppDelegate.m */; };
+		243FEADC18062130001C2661 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243FEADB18062130001C2661 /* HomeViewController.m */; };
+		243FEAE518062131001C2661 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243FEAE418062131001C2661 /* XCTest.framework */; };
+		243FEAE618062131001C2661 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243FEAC518062130001C2661 /* Foundation.framework */; };
+		243FEAE718062131001C2661 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243FEAC918062130001C2661 /* UIKit.framework */; };
+		243FEAFF180631F7001C2661 /* HaikuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243FEAFE180631F7001C2661 /* HaikuViewController.m */; };
+		24466B0E18AC32E30061C12F /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7ECBE18AAA1FA0090353F /* GoogleOpenSource.framework */; };
+		24466B0F18AC32E30061C12F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7ECBF18AAA1FA0090353F /* GooglePlus.framework */; };
+		244F90E8180DF93F0004B871 /* HomeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 244F90E7180DF93F0004B871 /* HomeViewControllerTests.m */; };
+		244F90EA180E19820004B871 /* HaikuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 244F90E9180E19820004B871 /* HaikuViewControllerTests.m */; };
+		24528BC91820A7C50023A11D /* HPFloatingUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 24528BC81820A7C50023A11D /* HPFloatingUI.m */; };
+		24592E91189C440400B271D9 /* Haiku+ Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 24592E8F189C440400B271D9 /* Haiku+ Background.png */; };
+		24592E92189C440400B271D9 /* Haiku+ Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24592E90189C440400B271D9 /* Haiku+ Logo.png */; };
+		2466F0C8181F44BA00343935 /* HPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2466F0C7181F44BA00343935 /* HPObject.m */; };
+		24726F6A1810A68F0004323D /* SimulatedHPNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726F691810A68F0004323D /* SimulatedHPNetworkClient.m */; };
+		24726F711811A4C40004323D /* MockHPCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726F701811A4C40004323D /* MockHPCommunicator.m */; };
+		24726F741811A67F0004323D /* FakeGPPSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726F731811A67F0004323D /* FakeGPPSignIn.m */; };
+		2477C09A180C6167000769C0 /* HPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2477C099180C6167000769C0 /* HPUser.m */; };
+		2477C09C180C6C01000769C0 /* HPCommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2477C09B180C6C01000769C0 /* HPCommunicatorTests.m */; };
+		2477C09F180C6CC8000769C0 /* FakeHPNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2477C09E180C6CC8000769C0 /* FakeHPNetworkClient.m */; };
+		2477C0A2180CA3C0000769C0 /* HPHaiku.m in Sources */ = {isa = PBXBuildFile; fileRef = 2477C0A1180CA3C0000769C0 /* HPHaiku.m */; };
+		2477C0A7180CBFD3000769C0 /* HPUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2477C0A6180CBFD3000769C0 /* HPUserTests.m */; };
+		247F89FF180675D800E6BA1B /* CreateHaikuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247F89FE180675D700E6BA1B /* CreateHaikuViewController.m */; };
+		24823AF71811FBFD001D6D0A /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24823AF61811FBFD001D6D0A /* AppDelegateTests.m */; };
+		24C0EC8B180CCACF0040DB41 /* HPHaikuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C0EC8A180CCACF0040DB41 /* HPHaikuTests.m */; };
+		24C651CE180B437100464C71 /* HPNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C651CD180B437100464C71 /* HPNetworkClient.m */; };
+		24C651D1180B453600464C71 /* HPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C651D0180B453600464C71 /* HPConstants.m */; };
+		24C651D3180B49E800464C71 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C651D2180B49E800464C71 /* MobileCoreServices.framework */; };
+		24D78AFE1811F2CD00734763 /* MockTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D78AFD1811F2CD00734763 /* MockTableView.m */; };
+		24D7ECBD18A567910090353F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D7ECBC18A567910090353F /* Images.xcassets */; };
+		24D7ECC018AAA1FA0090353F /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7ECBE18AAA1FA0090353F /* GoogleOpenSource.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		24D7ECC118AAA1FA0090353F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7ECBF18AAA1FA0090353F /* GooglePlus.framework */; };
+		24D7ECC318AAA21D0090353F /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24D7ECC218AAA21D0090353F /* GooglePlus.bundle */; };
+		24D7ECC518AAA2430090353F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7ECC418AAA2430090353F /* AddressBook.framework */; };
+		24DC87A0189AE10D00674FE7 /* Haiku+ Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DC879F189AE10D00674FE7 /* Haiku+ Title.png */; };
+		24DC87A2189AE27E00674FE7 /* Disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DC87A1189AE27E00674FE7 /* Disconnect.png */; };
+		24DC87A4189AE29000674FE7 /* SignOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DC87A3189AE29000674FE7 /* SignOut.png */; };
+		24F2131D1808BBAA00F33435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243FEAD718062130001C2661 /* Main.storyboard */; };
+		24F649B6180A9F8A00D0295E /* HPCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F649B5180A9F8A00D0295E /* HPCommunicator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		243FEAE818062131001C2661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 243FEABA18062130001C2661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 243FEAC118062130001C2661;
+			remoteInfo = HaikuPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		240D8A491808F56F00A16377 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		240D8A4A1808F56F00A16377 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		240D8A4B1808F56F00A16377 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		240D8A4C1808F56F00A16377 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		240D8A4D1808F56F00A16377 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		240D8A4E1808F56F00A16377 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		240D8A4F1808F56F00A16377 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		240D8A501808F56F00A16377 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		240D8A511808F56F00A16377 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		240D8A521808F56F00A16377 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		240D8A531808F56F00A16377 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		240D8A541808F56F00A16377 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		240D8A551808F56F00A16377 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		240D8A561808F56F00A16377 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		240D8A571808F56F00A16377 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		240D8A581808F56F00A16377 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		240D8A591808F56F00A16377 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		240D8A5A1808F56F00A16377 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		240D8A5B1808F56F00A16377 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		240D8A5C1808F56F00A16377 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		240D8A6E1809C3F100A16377 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		240D8A701809C3FF00A16377 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		240D8A721809C40600A16377 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		240D8A741809C41000A16377 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		240D8A761809C41900A16377 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		240D8A781809C41F00A16377 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		240D8A7A1809C42A00A16377 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2434A8FE1858CCB400FCD684 /* SimulatedNSMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimulatedNSMutableURLRequest.m; path = HaikuPlus/SimulatedNSMutableURLRequest.m; sourceTree = "<group>"; };
+		2434A8FF1858CCB400FCD684 /* SimulatedNSMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimulatedNSMutableURLRequest.h; path = HaikuPlus/SimulatedNSMutableURLRequest.h; sourceTree = "<group>"; };
+		2434A9001858CCB400FCD684 /* SimulatedAFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimulatedAFHTTPRequestOperation.m; path = HaikuPlus/SimulatedAFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		2434A9011858CCB400FCD684 /* SimulatedAFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimulatedAFHTTPRequestOperation.h; path = HaikuPlus/SimulatedAFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		2434A9041858CCB400FCD684 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		2434A9071858CCB400FCD684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		243DC1D6185B87E000AAE093 /* FakeGTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeGTMOAuth2Authentication.m; path = HaikuPlusTests/FakeGTMOAuth2Authentication.m; sourceTree = SOURCE_ROOT; };
+		243DC1D7185B87E000AAE093 /* FakeGTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeGTMOAuth2Authentication.h; path = HaikuPlusTests/FakeGTMOAuth2Authentication.h; sourceTree = SOURCE_ROOT; };
+		243FEAC218062130001C2661 /* HaikuPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaikuPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		243FEAC518062130001C2661 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		243FEAC718062130001C2661 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		243FEAC918062130001C2661 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		243FEACD18062130001C2661 /* HaikuPlus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaikuPlus-Info.plist"; sourceTree = "<group>"; };
+		243FEACF18062130001C2661 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		243FEAD118062130001C2661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		243FEAD318062130001C2661 /* HaikuPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HaikuPlus-Prefix.pch"; sourceTree = "<group>"; };
+		243FEAD418062130001C2661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		243FEAD518062130001C2661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		243FEAD818062130001C2661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		243FEADA18062130001C2661 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		243FEADB18062130001C2661 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HomeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		243FEAE318062131001C2661 /* HaikuPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaikuPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		243FEAE418062131001C2661 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		243FEAEC18062131001C2661 /* HaikuPlusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "HaikuPlusTests-Info.plist"; path = "HaikuPlusTests/HaikuPlusTests-Info.plist"; sourceTree = "<group>"; };
+		243FEAEE18062131001C2661 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		243FEAFD180631F7001C2661 /* HaikuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaikuViewController.h; sourceTree = "<group>"; };
+		243FEAFE180631F7001C2661 /* HaikuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HaikuViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		244F90E7180DF93F0004B871 /* HomeViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewControllerTests.m; path = HaikuPlusTests/HomeViewControllerTests.m; sourceTree = SOURCE_ROOT; };
+		244F90E9180E19820004B871 /* HaikuViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HaikuViewControllerTests.m; path = HaikuPlusTests/HaikuViewControllerTests.m; sourceTree = SOURCE_ROOT; };
+		24528BC71820A7C50023A11D /* HPFloatingUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPFloatingUI.h; sourceTree = "<group>"; };
+		24528BC81820A7C50023A11D /* HPFloatingUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPFloatingUI.m; sourceTree = "<group>"; };
+		24592E8F189C440400B271D9 /* Haiku+ Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Haiku+ Background.png"; sourceTree = "<group>"; };
+		24592E90189C440400B271D9 /* Haiku+ Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Haiku+ Logo.png"; sourceTree = "<group>"; };
+		2466F0C6181F44BA00343935 /* HPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPObject.h; sourceTree = "<group>"; };
+		2466F0C7181F44BA00343935 /* HPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HPObject.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		24726F681810A68F0004323D /* SimulatedHPNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimulatedHPNetworkClient.h; path = HaikuPlus/SimulatedHPNetworkClient.h; sourceTree = "<group>"; };
+		24726F691810A68F0004323D /* SimulatedHPNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimulatedHPNetworkClient.m; path = HaikuPlus/SimulatedHPNetworkClient.m; sourceTree = "<group>"; };
+		24726F6F1811A4C40004323D /* MockHPCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockHPCommunicator.h; path = HaikuPlusTests/MockHPCommunicator.h; sourceTree = SOURCE_ROOT; };
+		24726F701811A4C40004323D /* MockHPCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockHPCommunicator.m; path = HaikuPlusTests/MockHPCommunicator.m; sourceTree = SOURCE_ROOT; };
+		24726F721811A67F0004323D /* FakeGPPSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeGPPSignIn.h; path = HaikuPlusTests/FakeGPPSignIn.h; sourceTree = SOURCE_ROOT; };
+		24726F731811A67F0004323D /* FakeGPPSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeGPPSignIn.m; path = HaikuPlusTests/FakeGPPSignIn.m; sourceTree = SOURCE_ROOT; };
+		2477C098180C6167000769C0 /* HPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPUser.h; sourceTree = "<group>"; };
+		2477C099180C6167000769C0 /* HPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HPUser.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2477C09B180C6C01000769C0 /* HPCommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPCommunicatorTests.m; path = HaikuPlusTests/HPCommunicatorTests.m; sourceTree = SOURCE_ROOT; };
+		2477C09D180C6CC8000769C0 /* FakeHPNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeHPNetworkClient.h; path = HaikuPlusTests/FakeHPNetworkClient.h; sourceTree = SOURCE_ROOT; };
+		2477C09E180C6CC8000769C0 /* FakeHPNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeHPNetworkClient.m; path = HaikuPlusTests/FakeHPNetworkClient.m; sourceTree = SOURCE_ROOT; };
+		2477C0A0180CA3C0000769C0 /* HPHaiku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPHaiku.h; sourceTree = "<group>"; };
+		2477C0A1180CA3C0000769C0 /* HPHaiku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HPHaiku.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2477C0A6180CBFD3000769C0 /* HPUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPUserTests.m; path = HaikuPlusTests/HPUserTests.m; sourceTree = SOURCE_ROOT; };
+		247F89FD180675D700E6BA1B /* CreateHaikuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateHaikuViewController.h; sourceTree = "<group>"; };
+		247F89FE180675D700E6BA1B /* CreateHaikuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CreateHaikuViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		24823AF61811FBFD001D6D0A /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegateTests.m; path = HaikuPlusTests/AppDelegateTests.m; sourceTree = SOURCE_ROOT; };
+		24C0EC8A180CCACF0040DB41 /* HPHaikuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPHaikuTests.m; path = HaikuPlusTests/HPHaikuTests.m; sourceTree = SOURCE_ROOT; };
+		24C651CC180B437100464C71 /* HPNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPNetworkClient.h; sourceTree = "<group>"; };
+		24C651CD180B437100464C71 /* HPNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPNetworkClient.m; sourceTree = "<group>"; };
+		24C651CF180B453600464C71 /* HPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPConstants.h; path = HaikuPlus/HPConstants.h; sourceTree = "<group>"; };
+		24C651D0180B453600464C71 /* HPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPConstants.m; path = HaikuPlus/HPConstants.m; sourceTree = "<group>"; };
+		24C651D2180B49E800464C71 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		24D78AFC1811F2CD00734763 /* MockTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockTableView.h; path = HaikuPlusTests/MockTableView.h; sourceTree = SOURCE_ROOT; };
+		24D78AFD1811F2CD00734763 /* MockTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockTableView.m; path = HaikuPlusTests/MockTableView.m; sourceTree = SOURCE_ROOT; };
+		24D7ECBC18A567910090353F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		24D7ECBE18AAA1FA0090353F /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		24D7ECBF18AAA1FA0090353F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		24D7ECC218AAA21D0090353F /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		24D7ECC418AAA2430090353F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		24DC879F189AE10D00674FE7 /* Haiku+ Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Haiku+ Title.png"; sourceTree = "<group>"; };
+		24DC87A1189AE27E00674FE7 /* Disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Disconnect.png; sourceTree = "<group>"; };
+		24DC87A3189AE29000674FE7 /* SignOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignOut.png; sourceTree = "<group>"; };
+		24F213141808BA2600F33435 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		24F649B4180A9F8A00D0295E /* HPCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCommunicator.h; sourceTree = "<group>"; };
+		24F649B5180A9F8A00D0295E /* HPCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCommunicator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		243FEABF18062130001C2661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D7ECC518AAA2430090353F /* AddressBook.framework in Frameworks */,
+				24D7ECC018AAA1FA0090353F /* GoogleOpenSource.framework in Frameworks */,
+				24D7ECC118AAA1FA0090353F /* GooglePlus.framework in Frameworks */,
+				24C651D3180B49E800464C71 /* MobileCoreServices.framework in Frameworks */,
+				240D8A7B1809C42A00A16377 /* SystemConfiguration.framework in Frameworks */,
+				240D8A791809C41F00A16377 /* Security.framework in Frameworks */,
+				240D8A771809C41900A16377 /* MediaPlayer.framework in Frameworks */,
+				240D8A751809C41000A16377 /* CoreText.framework in Frameworks */,
+				240D8A731809C40600A16377 /* CoreMotion.framework in Frameworks */,
+				240D8A711809C3FF00A16377 /* CoreLocation.framework in Frameworks */,
+				240D8A6F1809C3F100A16377 /* AssetsLibrary.framework in Frameworks */,
+				243FEAC818062130001C2661 /* CoreGraphics.framework in Frameworks */,
+				243FEACA18062130001C2661 /* UIKit.framework in Frameworks */,
+				243FEAC618062130001C2661 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243FEAE018062131001C2661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24466B0E18AC32E30061C12F /* GoogleOpenSource.framework in Frameworks */,
+				24466B0F18AC32E30061C12F /* GooglePlus.framework in Frameworks */,
+				243FEAE518062131001C2661 /* XCTest.framework in Frameworks */,
+				243FEAE718062131001C2661 /* UIKit.framework in Frameworks */,
+				243FEAE618062131001C2661 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		240D8A481808F56F00A16377 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				240D8A491808F56F00A16377 /* AFHTTPClient.h */,
+				240D8A4A1808F56F00A16377 /* AFHTTPClient.m */,
+				240D8A4B1808F56F00A16377 /* AFHTTPRequestOperation.h */,
+				240D8A4C1808F56F00A16377 /* AFHTTPRequestOperation.m */,
+				240D8A4D1808F56F00A16377 /* AFImageRequestOperation.h */,
+				240D8A4E1808F56F00A16377 /* AFImageRequestOperation.m */,
+				240D8A4F1808F56F00A16377 /* AFJSONRequestOperation.h */,
+				240D8A501808F56F00A16377 /* AFJSONRequestOperation.m */,
+				240D8A511808F56F00A16377 /* AFNetworkActivityIndicatorManager.h */,
+				240D8A521808F56F00A16377 /* AFNetworkActivityIndicatorManager.m */,
+				240D8A531808F56F00A16377 /* AFNetworking.h */,
+				240D8A541808F56F00A16377 /* AFPropertyListRequestOperation.h */,
+				240D8A551808F56F00A16377 /* AFPropertyListRequestOperation.m */,
+				240D8A561808F56F00A16377 /* AFURLConnectionOperation.h */,
+				240D8A571808F56F00A16377 /* AFURLConnectionOperation.m */,
+				240D8A581808F56F00A16377 /* AFXMLRequestOperation.h */,
+				240D8A591808F56F00A16377 /* AFXMLRequestOperation.m */,
+				240D8A5A1808F56F00A16377 /* LICENSE */,
+				240D8A5B1808F56F00A16377 /* UIImageView+AFNetworking.h */,
+				240D8A5C1808F56F00A16377 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		2434A9021858CCB400FCD684 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				2434A9031858CCB400FCD684 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = HaikuPlus/en.lproj;
+			sourceTree = "<group>";
+		};
+		2434A9051858CCB400FCD684 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				2434A9061858CCB400FCD684 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = HaikuPlus/Base.lproj;
+			sourceTree = "<group>";
+		};
+		243FEAB918062130001C2661 = {
+			isa = PBXGroup;
+			children = (
+				24D7ECC218AAA21D0090353F /* GooglePlus.bundle */,
+				24DC879F189AE10D00674FE7 /* Haiku+ Title.png */,
+				24DC87A3189AE29000674FE7 /* SignOut.png */,
+				24592E8F189C440400B271D9 /* Haiku+ Background.png */,
+				24592E90189C440400B271D9 /* Haiku+ Logo.png */,
+				24DC87A1189AE27E00674FE7 /* Disconnect.png */,
+				2434A9021858CCB400FCD684 /* en.lproj */,
+				2434A9051858CCB400FCD684 /* Base.lproj */,
+				24C651CF180B453600464C71 /* HPConstants.h */,
+				24C651D0180B453600464C71 /* HPConstants.m */,
+				240D8A481808F56F00A16377 /* AFNetworking */,
+				243FEACB18062130001C2661 /* HaikuPlus */,
+				243FEAEA18062131001C2661 /* HaikuPlusTests */,
+				243FEAC418062130001C2661 /* Frameworks */,
+				243FEAC318062130001C2661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		243FEAC318062130001C2661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				243FEAC218062130001C2661 /* HaikuPlus.app */,
+				243FEAE318062131001C2661 /* HaikuPlusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		243FEAC418062130001C2661 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24D7ECC418AAA2430090353F /* AddressBook.framework */,
+				24D7ECBE18AAA1FA0090353F /* GoogleOpenSource.framework */,
+				24D7ECBF18AAA1FA0090353F /* GooglePlus.framework */,
+				24C651D2180B49E800464C71 /* MobileCoreServices.framework */,
+				240D8A7A1809C42A00A16377 /* SystemConfiguration.framework */,
+				240D8A781809C41F00A16377 /* Security.framework */,
+				240D8A761809C41900A16377 /* MediaPlayer.framework */,
+				240D8A741809C41000A16377 /* CoreText.framework */,
+				240D8A721809C40600A16377 /* CoreMotion.framework */,
+				240D8A701809C3FF00A16377 /* CoreLocation.framework */,
+				240D8A6E1809C3F100A16377 /* AssetsLibrary.framework */,
+				24F213141808BA2600F33435 /* SenTestingKit.framework */,
+				243FEAC518062130001C2661 /* Foundation.framework */,
+				243FEAC718062130001C2661 /* CoreGraphics.framework */,
+				243FEAC918062130001C2661 /* UIKit.framework */,
+				243FEAE418062131001C2661 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		243FEACB18062130001C2661 /* HaikuPlus */ = {
+			isa = PBXGroup;
+			children = (
+				243FEAD418062130001C2661 /* AppDelegate.h */,
+				243FEAD518062130001C2661 /* AppDelegate.m */,
+				243FEAD718062130001C2661 /* Main.storyboard */,
+				243FEADA18062130001C2661 /* HomeViewController.h */,
+				243FEADB18062130001C2661 /* HomeViewController.m */,
+				243FEAFD180631F7001C2661 /* HaikuViewController.h */,
+				243FEAFE180631F7001C2661 /* HaikuViewController.m */,
+				247F89FD180675D700E6BA1B /* CreateHaikuViewController.h */,
+				247F89FE180675D700E6BA1B /* CreateHaikuViewController.m */,
+				24F649B4180A9F8A00D0295E /* HPCommunicator.h */,
+				24F649B5180A9F8A00D0295E /* HPCommunicator.m */,
+				24C651CC180B437100464C71 /* HPNetworkClient.h */,
+				24C651CD180B437100464C71 /* HPNetworkClient.m */,
+				24528BC71820A7C50023A11D /* HPFloatingUI.h */,
+				24528BC81820A7C50023A11D /* HPFloatingUI.m */,
+				2477C0A8180CC951000769C0 /* Models */,
+				24726F6B1810A6A10004323D /* Simulation */,
+				24D7ECBC18A567910090353F /* Images.xcassets */,
+				243FEACC18062130001C2661 /* Supporting Files */,
+			);
+			path = HaikuPlus;
+			sourceTree = "<group>";
+		};
+		243FEACC18062130001C2661 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				243FEACD18062130001C2661 /* HaikuPlus-Info.plist */,
+				243FEACE18062130001C2661 /* InfoPlist.strings */,
+				243FEAD118062130001C2661 /* main.m */,
+				243FEAD318062130001C2661 /* HaikuPlus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		243FEAEA18062131001C2661 /* HaikuPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				24823AF61811FBFD001D6D0A /* AppDelegateTests.m */,
+				244F90E7180DF93F0004B871 /* HomeViewControllerTests.m */,
+				244F90E9180E19820004B871 /* HaikuViewControllerTests.m */,
+				2477C09B180C6C01000769C0 /* HPCommunicatorTests.m */,
+				24C0EC8A180CCACF0040DB41 /* HPHaikuTests.m */,
+				2477C0A6180CBFD3000769C0 /* HPUserTests.m */,
+				24726F721811A67F0004323D /* FakeGPPSignIn.h */,
+				24726F731811A67F0004323D /* FakeGPPSignIn.m */,
+				24726F6F1811A4C40004323D /* MockHPCommunicator.h */,
+				24726F701811A4C40004323D /* MockHPCommunicator.m */,
+				24D78AFC1811F2CD00734763 /* MockTableView.h */,
+				24D78AFD1811F2CD00734763 /* MockTableView.m */,
+				2477C09D180C6CC8000769C0 /* FakeHPNetworkClient.h */,
+				2477C09E180C6CC8000769C0 /* FakeHPNetworkClient.m */,
+				243DC1D7185B87E000AAE093 /* FakeGTMOAuth2Authentication.h */,
+				243DC1D6185B87E000AAE093 /* FakeGTMOAuth2Authentication.m */,
+				243FEAEB18062131001C2661 /* Supporting Files */,
+			);
+			name = HaikuPlusTests;
+			path = HaikuPlus;
+			sourceTree = "<group>";
+		};
+		243FEAEB18062131001C2661 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				243FEAEC18062131001C2661 /* HaikuPlusTests-Info.plist */,
+				243FEAED18062131001C2661 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			path = "HaikuPlusTests/Supporting Files";
+			sourceTree = "<group>";
+		};
+		24726F6B1810A6A10004323D /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				24726F681810A68F0004323D /* SimulatedHPNetworkClient.h */,
+				24726F691810A68F0004323D /* SimulatedHPNetworkClient.m */,
+				2434A8FF1858CCB400FCD684 /* SimulatedNSMutableURLRequest.h */,
+				2434A8FE1858CCB400FCD684 /* SimulatedNSMutableURLRequest.m */,
+				2434A9011858CCB400FCD684 /* SimulatedAFHTTPRequestOperation.h */,
+				2434A9001858CCB400FCD684 /* SimulatedAFHTTPRequestOperation.m */,
+			);
+			name = Simulation;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2477C0A8180CC951000769C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2477C0A0180CA3C0000769C0 /* HPHaiku.h */,
+				2477C0A1180CA3C0000769C0 /* HPHaiku.m */,
+				2477C098180C6167000769C0 /* HPUser.h */,
+				2477C099180C6167000769C0 /* HPUser.m */,
+				2466F0C6181F44BA00343935 /* HPObject.h */,
+				2466F0C7181F44BA00343935 /* HPObject.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		243FEAC118062130001C2661 /* HaikuPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243FEAF418062131001C2661 /* Build configuration list for PBXNativeTarget "HaikuPlus" */;
+			buildPhases = (
+				243FEABE18062130001C2661 /* Sources */,
+				243FEABF18062130001C2661 /* Frameworks */,
+				243FEAC018062130001C2661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaikuPlus;
+			productName = HaikuPlus;
+			productReference = 243FEAC218062130001C2661 /* HaikuPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		243FEAE218062131001C2661 /* HaikuPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243FEAF718062131001C2661 /* Build configuration list for PBXNativeTarget "HaikuPlusTests" */;
+			buildPhases = (
+				243FEADF18062131001C2661 /* Sources */,
+				243FEAE018062131001C2661 /* Frameworks */,
+				243FEAE118062131001C2661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				243FEAE918062131001C2661 /* PBXTargetDependency */,
+			);
+			name = HaikuPlusTests;
+			productName = HaikuPlusTests;
+			productReference = 243FEAE318062131001C2661 /* HaikuPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		243FEABA18062130001C2661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Google, Inc.";
+				TargetAttributes = {
+					243FEAE218062131001C2661 = {
+						TestTargetID = 243FEAC118062130001C2661;
+					};
+				};
+			};
+			buildConfigurationList = 243FEABD18062130001C2661 /* Build configuration list for PBXProject "HaikuPlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 243FEAB918062130001C2661;
+			productRefGroup = 243FEAC318062130001C2661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				243FEAC118062130001C2661 /* HaikuPlus */,
+				243FEAE218062131001C2661 /* HaikuPlusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		243FEAC018062130001C2661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D7ECC318AAA21D0090353F /* GooglePlus.bundle in Resources */,
+				24592E91189C440400B271D9 /* Haiku+ Background.png in Resources */,
+				24DC87A0189AE10D00674FE7 /* Haiku+ Title.png in Resources */,
+				24F2131D1808BBAA00F33435 /* Main.storyboard in Resources */,
+				24DC87A4189AE29000674FE7 /* SignOut.png in Resources */,
+				240D8A651808F56F00A16377 /* LICENSE in Resources */,
+				2434A90B1858CCB400FCD684 /* Main.storyboard in Resources */,
+				243FEAD018062130001C2661 /* InfoPlist.strings in Resources */,
+				24592E92189C440400B271D9 /* Haiku+ Logo.png in Resources */,
+				24D7ECBD18A567910090353F /* Images.xcassets in Resources */,
+				2434A90A1858CCB400FCD684 /* InfoPlist.strings in Resources */,
+				24DC87A2189AE27E00674FE7 /* Disconnect.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243FEAE118062131001C2661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		243FEABE18062130001C2661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240D8A631808F56F00A16377 /* AFURLConnectionOperation.m in Sources */,
+				240D8A661808F56F00A16377 /* UIImageView+AFNetworking.m in Sources */,
+				243FEADC18062130001C2661 /* HomeViewController.m in Sources */,
+				243FEAFF180631F7001C2661 /* HaikuViewController.m in Sources */,
+				240D8A621808F56F00A16377 /* AFPropertyListRequestOperation.m in Sources */,
+				2434A9091858CCB400FCD684 /* SimulatedAFHTTPRequestOperation.m in Sources */,
+				243FEAD618062130001C2661 /* AppDelegate.m in Sources */,
+				24C651CE180B437100464C71 /* HPNetworkClient.m in Sources */,
+				240D8A641808F56F00A16377 /* AFXMLRequestOperation.m in Sources */,
+				2477C09A180C6167000769C0 /* HPUser.m in Sources */,
+				2434A9081858CCB400FCD684 /* SimulatedNSMutableURLRequest.m in Sources */,
+				24726F6A1810A68F0004323D /* SimulatedHPNetworkClient.m in Sources */,
+				2477C0A2180CA3C0000769C0 /* HPHaiku.m in Sources */,
+				240D8A611808F56F00A16377 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				24F649B6180A9F8A00D0295E /* HPCommunicator.m in Sources */,
+				240D8A5E1808F56F00A16377 /* AFHTTPRequestOperation.m in Sources */,
+				243FEAD218062130001C2661 /* main.m in Sources */,
+				24C651D1180B453600464C71 /* HPConstants.m in Sources */,
+				240D8A5F1808F56F00A16377 /* AFImageRequestOperation.m in Sources */,
+				240D8A5D1808F56F00A16377 /* AFHTTPClient.m in Sources */,
+				2466F0C8181F44BA00343935 /* HPObject.m in Sources */,
+				240D8A601808F56F00A16377 /* AFJSONRequestOperation.m in Sources */,
+				24528BC91820A7C50023A11D /* HPFloatingUI.m in Sources */,
+				247F89FF180675D800E6BA1B /* CreateHaikuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243FEADF18062131001C2661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2477C09C180C6C01000769C0 /* HPCommunicatorTests.m in Sources */,
+				244F90E8180DF93F0004B871 /* HomeViewControllerTests.m in Sources */,
+				243DC1D8185B87E000AAE093 /* FakeGTMOAuth2Authentication.m in Sources */,
+				24823AF71811FBFD001D6D0A /* AppDelegateTests.m in Sources */,
+				24726F741811A67F0004323D /* FakeGPPSignIn.m in Sources */,
+				24C0EC8B180CCACF0040DB41 /* HPHaikuTests.m in Sources */,
+				24D78AFE1811F2CD00734763 /* MockTableView.m in Sources */,
+				2477C0A7180CBFD3000769C0 /* HPUserTests.m in Sources */,
+				2477C09F180C6CC8000769C0 /* FakeHPNetworkClient.m in Sources */,
+				244F90EA180E19820004B871 /* HaikuViewControllerTests.m in Sources */,
+				24726F711811A4C40004323D /* MockHPCommunicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		243FEAE918062131001C2661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 243FEAC118062130001C2661 /* HaikuPlus */;
+			targetProxy = 243FEAE818062131001C2661 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2434A9031858CCB400FCD684 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2434A9041858CCB400FCD684 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2434A9061858CCB400FCD684 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2434A9071858CCB400FCD684 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		243FEACE18062130001C2661 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				243FEACF18062130001C2661 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		243FEAD718062130001C2661 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				243FEAD818062130001C2661 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		243FEAED18062131001C2661 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				243FEAEE18062131001C2661 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = HaikuPlusTests;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		243FEAF218062131001C2661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		243FEAF318062131001C2661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		243FEAF518062131001C2661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaikuPlus/HaikuPlus-Prefix.pch";
+				INFOPLIST_FILE = "HaikuPlus/HaikuPlus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = HaikuPlus;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		243FEAF618062131001C2661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaikuPlus/HaikuPlus-Prefix.pch";
+				INFOPLIST_FILE = "HaikuPlus/HaikuPlus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = HaikuPlus;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		243FEAF818062131001C2661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaikuPlus.app/HaikuPlus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SRCROOT)",
+					/Users/cartland/clients/haikuplus/googlemac/Shared/GooglePlus/Dev/HaikuPlus,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaikuPlus/HaikuPlus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HaikuPlusTests/HaikuPlusTests-Info.plist";
+				PRODUCT_NAME = HaikuPlusTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		243FEAF918062131001C2661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaikuPlus.app/HaikuPlus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SRCROOT)",
+					/Users/cartland/clients/haikuplus/googlemac/Shared/GooglePlus/Dev/HaikuPlus,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaikuPlus/HaikuPlus-Prefix.pch";
+				INFOPLIST_FILE = "HaikuPlusTests/HaikuPlusTests-Info.plist";
+				PRODUCT_NAME = HaikuPlusTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		243FEABD18062130001C2661 /* Build configuration list for PBXProject "HaikuPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243FEAF218062131001C2661 /* Debug */,
+				243FEAF318062131001C2661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		243FEAF418062131001C2661 /* Build configuration list for PBXNativeTarget "HaikuPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243FEAF518062131001C2661 /* Debug */,
+				243FEAF618062131001C2661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		243FEAF718062131001C2661 /* Build configuration list for PBXNativeTarget "HaikuPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243FEAF818062131001C2661 /* Debug */,
+				243FEAF918062131001C2661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 243FEABA18062130001C2661 /* Project object */;
+}
