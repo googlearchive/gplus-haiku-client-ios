@@ -1,6 +1,6 @@
 /*
  *
- * Copyright 2013 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,7 +54,7 @@ enum {
     @"google_display_name" : @"testdisplayname",
     @"google_photo_url" : @"testphotourl",
     @"google_profile_url" : @"testprofileurl",
-    @"last_updated" : @"2013-09-30T00:25:45Z"
+    @"last_updated" : @"2014-09-30T00:25:45Z"
   };
   _error = [NSError errorWithDomain:HomeViewControllerTestsErrorDomain
                               code:HomeViewControllerTestsErrorCode
